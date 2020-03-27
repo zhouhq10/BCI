@@ -1,5 +1,7 @@
 # Winning solution of the Decoding Brain Signals Cortana challenge
 
+Forked from https://github.com/alexandrebarachant/decoding-brain-challenge-2016
+
 This data analysis challenge was organized on the Microsoft Azure ML plateform.
 Data consisted in ECoG recording of 4 patients while they were presented picture of Face and House. The task was to build model achieving the highest categorization accuracy between the two type of pictures.
 

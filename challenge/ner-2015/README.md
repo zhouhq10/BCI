@@ -1,6 +1,6 @@
 # BCI Challenge @ NER 2015
 
-Fork from https://github.com/alexandrebarachant/bci-challenge-ner-2015
+**Forked from https://github.com/alexandrebarachant/bci-challenge-ner-2015**
 
 Code and documentation for the winning solution at the BCI Challenge @ NER 2015 : https://www.kaggle.com/c/inria-bci-challenge
 

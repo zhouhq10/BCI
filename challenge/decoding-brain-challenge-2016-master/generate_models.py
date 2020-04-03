@@ -12,7 +12,7 @@ from pyriemann.channelselection import ElectrodeSelection
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline
-from sklearn.cross_validation import KFold
+from sklearn.model_selection import KFold
 from sklearn.metrics import roc_auc_score
 
 from utils import (DownSampler, EpochsVectorizer, CospBoostingClassifier,
@@ -67,7 +67,7 @@ for p in np.unique(patients):
     clfs = deepcopy(array_clfs.values())
 
     ix = patients==p
-    eeg_data = np.float64(dataframe1.loc[ix].values[:,1:-2].T)
+    eeg_data = np.float128(dataframe1.loc[ix].values[:,1:-2].T)
     events   = np.int32(dataframe1.Stimulus_Type.loc[ix].values)
     stim_ID  = np.int32(dataframe1.Stimulus_ID.loc[ix].values)
     events[events==101] = 0
